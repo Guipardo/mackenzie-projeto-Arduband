@@ -1,17 +1,15 @@
-# [NOME DA DISCIPLINA] X sem. 20XX
+# OBJETOS INTELIGENTES CONECTADOS 2 sem. 2018
 
-## Turma XXX
-## Projeto: "nome do projeto"
+## Turma 05J12
+## Projeto: ArduBand
 ## Integrantes do grupo:
 
-* Aluno 1
+* Guilherme Rodrigues Martins - 41523237
 * Aluno 2
-* Aluno 3
-* Aluno 4
 
 ## Descrição resumida do projeto
 
-Descreva resumidamente o projeto aqui.
+Este projeto tem como objetivo desenvolver um jogo inspirado no jogo musical Rock Band utilizando uma matriz de leds e botões
 
 _______________________________________
 Obs:
