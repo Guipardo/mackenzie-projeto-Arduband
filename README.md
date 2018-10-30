@@ -5,7 +5,7 @@
 ## Integrantes do grupo:
 
 * Guilherme Rodrigues Martins - 41523237
-* Aluno 2
+* Gabriel Ferraro - 41521994
 
 ## Descrição resumida do projeto
 
