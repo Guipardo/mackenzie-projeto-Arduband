@@ -1,75 +1,33 @@
 # Documento de Visão do Projeto "NOME DO PROJETO"
 
-Este documento apresenta uma solução de software para o projeto *"NOME DO PROJETO"*, 
+Este documento apresenta uma solução de software para o projeto JOGO DA FORCA, 
 apresentando os problemas a serem solucionados, as necessidades dos principais envolvidos, o alcance do projeto e as funcionalidades esperadas.
 
 ## Objetivos
 
-* Objetivo 1
-* Objetivo 2
-* Objetivo 3
-* etc.
-
-## Problema
-
-* Descrição do problema: ___
-* Quem é afetado pelo problema: ____
-* Impacto no negócio: ___
-* Benefícios de uma boa solução: ___
-
-## Definições, abreviações e outros termos do domínio do problema
-
-* Definição 1
-* Definição 2
-* Definição 3
-* etc.
+* Desenvolver um jogo da forca em Arduino
 
 ## Integração com outros sistemas
 
-* Sistema externo 1
-* Sistema externo 2
-* Sistema externo 3
-* etc.
+* Não tem
  
 ## Interessados
 
-* Tipo de interessado 1
-* Tipo de interessado 2
-* Tipo de interessado 3
-* etc.
-
-## Usuários
-
-* Tipo de usuário 1
-* Tipo de usuário 2
-* Tipo de usuário 3
-* etc.
+* Público em geral
 
 ## Funcionalidades do produto
 
-* Funcionalidade 1
-* Funcionalidade 2
-* etc.
+* Escolher uma letra
+* Mostrar pontuação
+* Mostrar quantidade de vidas restantes
+* Mostrar se venceu ou perdeu
 
 ## Restrições do projeto
 
-* Restrição 1
-* Restrição 2
-* Restrição 3
-* etc.
+* O projeto trabalha em rede local
 
 ## Protótipos
 
-### Protótipos para funcionalidade 1
+### Circuito Geral
 
-![](proto1.png)
-
-Fonte: Exemplos gerados pelo assistente do **Enterprise Architect**.
-
-### Protótipos para funcionalidade 2
-
-![](proto2.png)
-
-Fonte: Exemplos gerados pelo assistente do **Enterprise Architect**.
-
-### Protótipos para funcionalidade N
+![](LCD_Led_Jogo_da_Forca.png)
