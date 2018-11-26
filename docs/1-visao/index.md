@@ -30,4 +30,4 @@ apresentando os problemas a serem solucionados, as necessidades dos principais e
 
 ### Circuito Geral
 
-![](LCD_Led_Jogo_da_Forca.png)
+![](LCD Led Jogo da Forca.png)
