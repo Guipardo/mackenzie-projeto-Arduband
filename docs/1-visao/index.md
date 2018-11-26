@@ -28,6 +28,5 @@ apresentando os problemas a serem solucionados, as necessidades dos principais e
 
 ## Protótipos
 
-### Circuito Geral
+* Circuito Geral - Neste mesmo diretório
 
-![](LCD Led Jogo da Forca.png)
