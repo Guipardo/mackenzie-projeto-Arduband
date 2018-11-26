@@ -2,10 +2,11 @@
 
 Deve conter:
 
-1) Lista de Peças (descrição e imagens, quando disponíveis)
+1) Lista de peças
 
-2) Desenho Tinkercad ou Fritzing
-
-3) Esquema eletrônico
-
-4) Materiais para confecção de caixas e consoles (ou arquivos para impressão 3D)
+* Display LCD 16x2 (Azul)
+* Arduino uno R3 com cabo USB
+* Protoboard
+* Conectores
+* Potenciômetro
+* Resistor 220ohm
