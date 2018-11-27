@@ -28,5 +28,5 @@ apresentando os problemas a serem solucionados, as necessidades dos principais e
 
 ## Protótipos
 
-* Circuito Geral - Neste mesmo diretório
+* Circuito Geral - No diretório Hardware
 
