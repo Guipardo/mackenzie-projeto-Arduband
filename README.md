@@ -6,6 +6,7 @@
 
 * Guilherme Rodrigues Martins - 41523237
 * Gabriel Ferraro - 41521994
+* Willi Takeshi - 41681142
 
 ## Descrição resumida do projeto
 
