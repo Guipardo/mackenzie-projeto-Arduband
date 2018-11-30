@@ -2,11 +2,13 @@
 
 Deve conter:
 
-1) Lista de peças
+Lista de peças
 
 * Display LCD 16x2 (Azul)
 * Arduino uno R3 com cabo USB
 * Protoboard
 * Conectores
-* Potenciômetro
 * Resistor 220ohm
+* Alto Falante
+* Modulo Bluetooth RS232 HC-05
+* Módulo Leitor de cartão SD
