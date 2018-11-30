@@ -73,8 +73,9 @@ void setup()
   sdcard.begin(9600); // Inicializa o leitor SD
   Serial.begin(9600); // Inicializa a porta serial
   
+  /* CONFIGURAÇÃO DO PLAYER */
   carregarLeitorSD();
-  configurarPlayer(500,25,0); // Timeout, Volume, Equalizador
+  configurarPlayer(500,15,0); // Timeout, Volume, Equalizador
   mostrarMenu();
 }
 
