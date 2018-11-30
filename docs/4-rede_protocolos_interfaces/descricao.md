@@ -1,4 +1,4 @@
 # Nesta seção devem ser descritas:
-1. Interfaces de rede utilizadas (shield GPRS, Ethernet, Modulos Wifi, etc)
+1. Interface de rede utilizada: Bluetooth
 2. Bibliotecas: SoftwareSerial,DFRobotDFPlayerMini
 3. Aplicativo Bluetooth Terminal HC-05
