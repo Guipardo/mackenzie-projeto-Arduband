@@ -1,8 +1,8 @@
 # Requisitos
 
-* Mostrar a dica da palavra
-* Mostrar a palavra de forma escondida, com sublinhados
-* Checar a jogada do usuário
-* Posicionar a letra na ordem correta caso acerte
-* Retirar um ponto de vida em caso de erro
-* Mostrar pontuação no fim do jogo
+* Executar uma faixa de mp3
+* Pausar a faixa de mp3
+* Parar a faixa de mp3
+* Definir equalização
+* Aumentar / Diminuir volume
+* Mostrar menu de comandos
