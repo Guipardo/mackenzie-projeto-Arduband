@@ -27,13 +27,17 @@ int equalizacao = 0; // Número do equalizador selecionado
 
 void mostrarMenu() // Exibe o menu
 {
+  /* As opções estão no formato [comando / atalho]
+  Onde o comando é a letra referente ao comando
+  e o atalho é referente ao botão do aplicativo Bluetooth Terminal que foi personalizado */
   bluetooth.println();
-  bluetooth.println("Menu:");
-  bluetooth.println(" [MUS1 - MUS9] Selecionar musica");
-  bluetooth.println(" [STOP] Parar reproducao");
-  bluetooth.println(" [PAUSE] Pausa/continua a musica");
-  bluetooth.println(" [EQUA] Seleciona equalizacao");
-  bluetooth.println(" [VOL+/VOL-] Aumenta / Diminui o volume");
+  bluetooth.println(" Menu:");
+  bluetooth.println(" [1-9 MUS1 - MUS9] Selecionar musica");
+  bluetooth.println(" [s/STOP] Parar reproducao");
+  bluetooth.println(" [p/PAUSE] Pausa/continua a musica");
+  bluetooth.println(" [e/EQUA] Seleciona equalizacao");
+  bluetooth.println(" [+/- VOL+/VOL-] Aumenta / Diminui o volume");
+  bluetooth.println(" [m/MENU] Aumenta / Diminui o volume");
   bluetooth.println("");
 }
 
@@ -41,7 +45,7 @@ void carregarLeitorSD(){
   bluetooth.println();
   bluetooth.println(F("DFRobot DFPlayer Mini"));
   bluetooth.println(F("Inicializando modulo DFPlayer... (3~5 segundos)"));
-  if (!myDFPlayer.begin(sdcard))
+  if (!myDFPlayer.begin(sdcard)) // Verifica se o cartão foi carregado
   {
     erroLeitura();
   }
@@ -78,7 +82,7 @@ void setup()
 void loop()
 {
   bluetooth.listen(); // Altera o foco da conexão para a porta serial bluetooth
-  while (bluetooth.available())
+  while (bluetooth.available()) // Enquanto houver entradas no buffer
   {
     buf = bluetooth.read(); // Recebe o comando via bluetooth (Aplicativo Terminal Bluetooth)
 
@@ -87,20 +91,20 @@ void loop()
     {
       bluetooth.print("Reproduzindo: ");  
       bluetooth.println(buf);
-      buf = buf - 48;
+      buf = buf - 48; // Valor que será usado para executar a faixa de mp3
       myDFPlayer.play(buf); 
       delay(500);
     }
     
     //Parada
-    if (buf == 's')
+    if (buf == 's') // Letra s - para a faixa de áudio
     {
       myDFPlayer.stop();
       bluetooth.println("Parado.");
     }
     
     //Pausa/Continua a musica
-    if (buf == 'p')
+    if (buf == 'p') // Letra p - pausa ou continua a faixa de áudio
     {
       pausa = !pausa;
       if (pausa == 0)
@@ -109,15 +113,14 @@ void loop()
         bluetooth.println("Tocando.");
       }
       if (pausa == 1)
-      {
-        
+      {   
         myDFPlayer.pause();
         bluetooth.println("Pausado.");
       }
     }
     
     //Seleciona equalizacao
-    if (buf == 'e')
+    if (buf == 'e') // Letra e - muda a equalização da faixa de áudio
     {
       equalizacao++;
       if (equalizacao == 6)
@@ -134,14 +137,14 @@ void loop()
     }
     
     //Aumenta volume
-    if (buf == '+')
+    if (buf == '+') // Caractere + - aumenta o vloume
     {
       myDFPlayer.volumeUp();
       bluetooth.println("Mais volume.");
     }
     
     //Diminui volume
-    if (buf == '-')
+    if (buf == '-') // Caractere + - diminui o volume
     {
       bluetooth.println();
       myDFPlayer.volumeDown();
@@ -149,7 +152,7 @@ void loop()
     }
 
     // Mostrar menu
-    if(buf == 'm'){
+    if(buf == 'm'){ // Letra m - mostra o menu
       mostrarMenu();
     }
   }
