@@ -6,7 +6,6 @@
  ***************************************************
   Created 2016-12-07
   By [Angelo qiao](Angelo.qiao@dfrobot.com)
-
   GNU Lesser General Public License.
   See <http://www.gnu.org/licenses/> for details.
  ****************************************************/
@@ -43,14 +42,14 @@ void mostrarMenu() // Exibe o menu
 
 void carregarLeitorSD(){
   bluetooth.println();
-  bluetooth.println(F("DFRobot DFPlayer Mini"));
-  bluetooth.println(F("Inicializando modulo DFPlayer... (3~5 segundos)"));
+  bluetooth.println("DFRobot DFPlayer Mini");
+  bluetooth.println("Inicializando modulo DFPlayer... (3~5 segundos)");
   if (!myDFPlayer.begin(sdcard)) // Verifica se o cartão foi carregado
   {
     erroLeitura();
   }
   bluetooth.println();
-  bluetooth.println(F("Modulo DFPlayer Mini inicializado!"));
+  bluetooth.println("Modulo DFPlayer Mini inicializado!");
 }
 
 void erroLeitura(){
