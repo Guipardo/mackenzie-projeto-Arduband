@@ -1,7 +1,7 @@
 # OBJETOS INTELIGENTES CONECTADOS 2 sem. 2018
 
 ## Turma 05J12
-## Projeto: Jogo da Forca
+## Projeto: Tocador de MP3 Player via bluetooth
 ## Integrantes do grupo:
 
 * Guilherme Rodrigues Martins - 41523237
@@ -10,6 +10,6 @@
 
 ## Descrição resumida do projeto
 
-Este projeto tem como objetivo desenvolver um jogo inspirado no jogo da forca utilizando um display LCD e a entrada Serial
+Este projeto tem como objetivo desenvolver um tocador de MP3 player que recebe comando via bluetooth e reproduz músicas de um cartão SD
 
 ______________________________________
